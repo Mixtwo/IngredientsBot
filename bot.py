@@ -14,6 +14,7 @@ def bot_login():
 			user_agent = "skin bot test v0.1")
 
 	return r
+
 # extract img
 def extract_img(url):
 	word = ".jpg"
@@ -23,7 +24,7 @@ def extract_img(url):
 # Runs the bot
 def run_bot(r, comments_replied_to):
 	print ("Obtaining 25 comments...")
-
+	#TODO: change 'test' subreddit to 'skincareaddiction' subreddit when bot is live
 	for comment in r.subreddit('test').comments(limit=25):
 		if ("!ingredients" in comment.body or "!Ingredients" in comment.body) and comment.id not in comments_replied_to:
 			print("String with !ingredients found!")
