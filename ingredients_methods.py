@@ -12,15 +12,13 @@ class Product:
 
 ###################### search results page ################################
 
-# queries = ["cerave", "moisturizing", "pm", "lotion"]
-
 def get_first_search_result_soup(search_return_list):
-		j = 0
-		while j<len(search_return_list):
-			soup_brand = search_return_list[j].find(attrs={'class': 'review-brand'}).text.strip()
-			if soup_brand != "Beautypedia: Exclusives":
-				return search_return_list[j]
-			j+=1
+	j = 0
+	while j<len(search_return_list):
+		soup_brand = search_return_list[j].find(attrs={'class': 'review-brand'}).text.strip()
+		if soup_brand != "Beautypedia: Exclusives":
+			return search_return_list[j]
+		j+=1
 
 def get_seach_results_page(queries):
 	queries_str = queries.replace(' ', '+').lower()
@@ -41,6 +39,7 @@ def get_seach_results_page(queries):
 
 		print(product_url)
 		return product_url
+	
 	#########
 	print("NO PRODUCT FOUND")
 	return None
