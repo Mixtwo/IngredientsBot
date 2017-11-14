@@ -1,5 +1,5 @@
 # IngredientsBot
-A Reddit bot called /u/IngredientsBot that chills in the subreddit **/r/SkincareAddiction** and gets called with the command **!ingredients <*search terms*>** to return the list of ingredients for a beauty product.
+A Reddit bot called /u/IngredientsBot that chills in the subreddit **/r/SkincareAddiction** and gets called with the command **!ingredients <*search terms*>** to return the list of ingredients for a beauty product with the use of its own Web-Scraper.
 
 ## How to use
 1. Must have a reddit account to be able to post on www.Reddit.com.
